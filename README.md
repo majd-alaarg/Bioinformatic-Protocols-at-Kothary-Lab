@@ -9,9 +9,7 @@ Date of creation: August 21, 2023
 
 Contact: majd.alaarg@gmail.com 
 
-#
-#
-#
+
 ## Additional help
 
 If you run into major issues or require help, you can consult the [nf-core documentation](https://nf-co.re/docs/usage/introduction) (click on link or just Google nf-core documentation)
