@@ -11,7 +11,8 @@ To test that nf-core and your pipeline and working, run the following individual
 	`nextflow run hello `
 
 -   To test that everything is working properly, try running the tests for your pipeline of interest in the terminal:
-`nextflow run /scratch/$USER/nf-core/<PATH TO PIPELINE> -profile test,singularity --outdir <OUTDIR>`
+
+	`nextflow run /scratch/$USER/nf-core/<PATH TO PIPELINE> -profile test,singularity --outdir <OUTDIR>`
 
 In my case, `<PATH TO PIPELINE>` was `nf-core-rnaseq_3.12.0/3_12_0` and `<OUTDIR>` was `/scratch/pipelinetest1`. 
 
