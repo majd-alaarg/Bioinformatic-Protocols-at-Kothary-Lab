@@ -1,4 +1,6 @@
-# Getting started with Nextflow's nf-core for RNASeq
+
+# Getting Started: Installing nf-core and RNASeq pipeline:
+
 ## Introduction
 [Nf-core](https://nf-co.re/) provides highly optimised bioinformatic pipelines with excellent reporting. Validated releases ensure reproducibility.
 The [RNASeq pipeline](https://nf-co.re/rnaseq/3.12.0) is used.
@@ -10,7 +12,7 @@ The Digital Research Alliance of Canada's GRAHAM is a computing system that allo
 
 First, you must connect/login to the Graham computing cluster via your terminal or command prompt. However, there are terminal emulator software that **emulate the functionalities of classic computer terminals** but make it easier by providing graphical user interface.
 
-I use [Mobaxterm](https://mobaxterm.mobatek.net/), a free software, however, others exist. It's easy-to-use and makes working on the computing cluster easy if you have no previous experience working with terminal or databases.
+I used [Mobaxterm](https://mobaxterm.mobatek.net/), a free software, however, others exist. It's easy-to-use and makes working on the computing cluster easy if you have no previous experience working with terminal or databases.
 
 ## Running a terminal session
 
@@ -29,7 +31,33 @@ Here are some basic commands that I saw online:
 
 ## Rename a file
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Once logged into the cluster, you should install nf-core. When on the cluster, you're automatically signed into the gra-login node, for the installation process, connect to a node dedicated for file transfers, dtn-1, as follows:
+
+    ssh gra-dtn1
+   Once on the node, type in **tmux**, this creates a tmux session which you can connect to by **tmux attach** if you get disconnected, allowing you to go on and off a session presumably.
+
+To begin the download process, copy and paste the following onto your terminal:
+
+    #create an nfcore directory
+    mkdir -p /scratch/$USER/nf-core
+    #cd to the new nfcore directory
+    cd /scratch/$USER/nf-core
+  
+  Contrary to the OHRI's Ottawa Bioinformatics Core's documentation, I could not use their method of loading a python environment to then install packages with pip. With the help of the nf-core developer teams, I developed another installation process that does the exact same thing, except with a different python loading method based on the documentation from [The Python Packaging Authority (_PyPA_)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/).
+
+Based on that, execute the following commands to create the environment in which you can install nf-core:
+
+    python3  -m  venv  tutorial_env
+    source  tutorial_env/bin/activate
+    python3  -m  pip  install nf-core
+
+It will then guide you through the download process, prompting you to choose several options.
+
+ - Select the latest pipeline revision
+ - For containers, select **SINGULARITY**!!
+ - Select **copy** when prompted to copy singularity images to target folders.
+ - Compression type: **none**
+ - Default institutional configuration: **yes**
 
 ## Delete a file
 
