@@ -1,5 +1,5 @@
 
-# Getting Started: Installing nf-core and RNASeq pipeline
+# Getting Started: Installing nf-core and RNASeq pipeline:
 
 ## Introduction
 [Nf-core](https://nf-co.re/) provides highly optimised bioinformatic pipelines with excellent reporting. Validated releases ensure reproducibility.
@@ -43,7 +43,7 @@ To begin the download process, copy and paste the following onto your terminal:
     #cd to the new nfcore directory
     cd /scratch/$USER/nf-core
   
-  Contrary to the OHRI's Ottawa Bioinformatics Core's documentation available at the time, I could not use their method of loading a python environment to then install packages with pip, probably due to updates in the pipeline. With the help of the nf-core developer teams, I developed another installation process that does the exact same thing, except with a different python loading method based on the documentation from [The Python Packaging Authority (_PyPA_)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/).
+  Contrary to the OHRI's Ottawa Bioinformatics Core's documentation, I could not use their method of loading a python environment to then install packages with pip. With the help of the nf-core developer teams, I developed another installation process that does the exact same thing, except with a different python loading method based on the documentation from [The Python Packaging Authority (_PyPA_)](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/).
 
 Based on that, execute the following commands to create the environment in which you can install nf-core:
 
@@ -55,7 +55,7 @@ It will then guide you through the download process, prompting you to choose sev
 
  - Select the latest pipeline revision
  - For containers, select **SINGULARITY**!!
- - Select **copy** when prompted to copy singularity images to target folders.
+ - Select **amend** when prompted to copy singularity images to target folders.
  - Compression type: **none**
  - Default institutional configuration: **yes**
 
