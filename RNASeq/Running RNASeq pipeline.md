@@ -5,7 +5,8 @@
 With nf-core downloaded and the rnaseq pipeline also installed, jobs can now be executed.
 
 To test that nf-core and your pipeline and working, run the following individually:
-
+  
+    
 -   Try running the Nextflow “hello world” example to make sure that the tools are working properly:
 
 	`nextflow run hello `
@@ -16,7 +17,7 @@ To test that nf-core and your pipeline and working, run the following individual
 
 In my case, `<PATH TO PIPELINE>` was `nf-core-rnaseq_3.12.0/3_12_0` and `<OUTDIR>` was `/scratch/pipelinetest1`. 
 
-**Using MobaXTerm or your terminal emulator, you can browse through the file directories to your file paths.**  
+**Using MobaXTerm or your terminal emulator, you can browse through the file directories to your file paths.** 
 
  - So, I ran `nextflow run /scratch/$USER/nf-core/nf-core-rnaseq_3.12.0/3_12_0 -profile test,singularity --outdir /scratch/pipelinetest1`
 
