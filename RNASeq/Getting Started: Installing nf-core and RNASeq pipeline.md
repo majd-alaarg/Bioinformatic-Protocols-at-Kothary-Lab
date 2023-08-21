@@ -1,5 +1,5 @@
 
-# Getting Started: Installing nf-core and RNASeq pipeline:
+# Getting Started: Installing nf-core and RNASeq pipeline
 
 ## Introduction
 [Nf-core](https://nf-co.re/) provides highly optimised bioinformatic pipelines with excellent reporting. Validated releases ensure reproducibility.
@@ -29,7 +29,7 @@ Using Linux is not that hard. If you ever need to do something that you don't kn
 Here are some basic commands that I saw online:
 ![enter image description here](https://github.com/majd-alaarg/bioInformatics/blob/28fc76aaf0fd7a51715005981cae5fcf706c693e/Assets/Linux%20Commands.png)
 
-## Rename a file
+## Installing nf-core
 
 Once logged into the cluster, you should install nf-core. When on the cluster, you're automatically signed into the gra-login node, for the installation process, connect to a node dedicated for file transfers, dtn-1, as follows:
 
@@ -51,6 +51,14 @@ Based on that, execute the following commands to create the environment in which
     source  tutorial_env/bin/activate
     python3  -m  pip  install nf-core
 
+Once that is completed, nf-core is downloaded and you now need to download the pipeline.
+
+## Downloading pipeline
+
+To download the pipeline, run the following: 
+
+       nf-core download rnaseq
+
 It will then guide you through the download process, prompting you to choose several options.
 
  - Select the latest pipeline revision
@@ -59,10 +67,8 @@ It will then guide you through the download process, prompting you to choose sev
  - Compression type: **none**
  - Default institutional configuration: **yes**
 
-## Delete a file
-
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
 
 ## Export a file
 
 You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+
