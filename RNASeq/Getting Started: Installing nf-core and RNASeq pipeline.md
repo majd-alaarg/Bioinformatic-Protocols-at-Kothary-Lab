@@ -48,16 +48,18 @@ Contrary to the OHRI's Ottawa Bioinformatics Core's documentation available at h
 
 Based on that, execute the following commands to create the environment in which you can install nf-core:
 
+    #load version of python needed
     module load python/3.10.2
     python3  -m  venv  tutorial_env
     source  tutorial_env/bin/activate
     python3  -m  pip  install nf-core
+Note: After a lot of trial and error, I found that the correct version of python needed to be manually loaded (as shown above) before creating the python environment, otherwise your process will return back an error in the final step of the installation.
 
 Once that is completed, nf-core is downloaded and you now need to download the pipeline.
 
 ## Downloading pipeline
 
-To download the pipeline, run the following: 
+To download the **rnaseq** pipeline, run the following: 
 
        nf-core download rnaseq
 
