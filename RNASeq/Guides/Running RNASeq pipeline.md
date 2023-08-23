@@ -108,7 +108,7 @@ It takes time for the resources to be allocated.
 ## Running analysis pipeline
 Once connected to the computing node, load the necessary tools:
 
-    module load python/3.10.2`
+    module load python/3.10.2
     module load StdEnv/2020
     module load nextflow/22.10.6
     module load apptainer/1.1
