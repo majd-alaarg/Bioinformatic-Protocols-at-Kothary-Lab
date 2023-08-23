@@ -74,6 +74,22 @@ Resulting in the following output for our experiment:
 See [additional information](#python) for more.
 
 ## Uploading Gencode annotations
+I then downloaded the latest version of the GENCODE annotations for mice (**MAKE SURE YOU ALIGN TO MOUSE GENOME, I accidentally aligned to human at first**).
+
+You can see the latest release [here](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/latest_release/). (vM33 at the time of writing this).
+
+    wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M33/gencode.vM33.basic.annotation.gtf.gz
+    #unzip
+    gunzip gencode.vM33.basic.annotation.gtf.gz
+    
+    wget https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M33/GRCm39.primary_assembly.genome.fa.gz
+    #unzip
+    gunzip GRCm39.primary_assembly.genome.fa.gz
+
+### Uploading OBCF config files
+For the configuration, aside from nf-core/rnaseq default config, I also used a config file provided by the OBCF.
+
+    curl https://gitlab.com/ohri/obcf-documentation/-/raw/master/Files/obcf-graham.cfg > obcf-graham.cfg
 
 ## Starting computing session 
 
@@ -85,13 +101,14 @@ At the time, with the large experiment we had, I specified 96G of memory, 12 cor
 
 So, login to a computing node, I run the following:
 
-    salloc --account=def-rkothary --mem=96G --time=24:00:00 -c 12
+    salloc --account=def-rkothary --mem=96G --time=24:00:00 -c 14
 
 It takes time for the resources to be allocated.
 
 ## Running analysis pipeline
 Once connected to the computing node, load the necessary tools:
 
+    module load python/3.10.2`
     module load StdEnv/2020
     module load nextflow/22.10.6
     module load apptainer/1.1
@@ -117,10 +134,13 @@ Ensuring default directories are good:
         	--input samplesheet.csv \
         	--outdir nfcore-results \
         	-c obcf-graham.cfg \
-        	--gtf $NXF_SINGULARITY_CACHEDIR/gencode.v43.basic.annotation.gtf \
-        	--fasta $NXF_SINGULARITY_CACHEDIR/GRCh38.primary_assembly.genome.fa \
+        	--gtf $NXF_SINGULARITY_CACHEDIR/gencode.vM33.basic.annotation.gtf \
+        	--fasta $NXF_SINGULARITY_CACHEDIR/GRCm39.primary_assembly.genome.fa \
         	--gencode
-Above, it is assumed that your samplesheet is called `samplesheet.csv`, your configuration file is called `obcf-graham.cfg` , and your gencode annotations are named as above.
+        	
+Above, it is assumed that your samplesheet is called `samplesheet.csv`, your configuration file is called `obcf-graham.cfg`(the configuration file provided by the OBCF at the OHRI) , and your gencode annotations are named as above.
+
+
 ## Additional information
 
 ### <a id=python></a> RNASEQ Configuration using python script
@@ -135,3 +155,4 @@ As per the [OHRI OBCF documentation](https://gitlab.com/ohri/obcf-documentation/
 Using Linux is not that hard. If you ever need to do something that you don't know how to (e.g deleting a file), just Google, "How to delete a file in linux terminal."
 Here are some basic commands that I saw online:
 ![enter image description here](https://github.com/majd-alaarg/bioInformatics/blob/28fc76aaf0fd7a51715005981cae5fcf706c693e/Assets/Linux%20Commands.png)
+
