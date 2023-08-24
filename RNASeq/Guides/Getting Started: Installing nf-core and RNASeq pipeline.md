@@ -38,12 +38,19 @@ Once logged into the cluster, you should install nf-core. When on the cluster, y
 Once on the node, type in **tmux**, this creates a tmux session which you can connect to by **tmux attach** if you get disconnected, allowing you to go on and off a session presumably.
 
 module load StdEnv/2020
+
 module load nextflow/22.10.6
+
 module load apptainer/1.1
+
 module load java/13.0.2
+
 NXF_SINGULARITY_CACHEDIR=/scratch/${USER}/nf-core/
+
 cd $NXF_SINGULARITY_CACHEDIR
+
 source /scratch/$USER/nf-core/ENV/bin/activate
+
 
 
 To begin the download process, copy and paste the following onto your terminal:
