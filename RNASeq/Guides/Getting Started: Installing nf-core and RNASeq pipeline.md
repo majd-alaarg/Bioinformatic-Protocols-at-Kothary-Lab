@@ -45,7 +45,7 @@ module load apptainer/1.1
 
 module load java/13.0.2
 
-NXF_SINGULARITY_CACHEDIR=/scratch/${USER}/nf-core/
+NXF_SINGULARITY_CACHEDIR=/scratch/$USER/nf-core/
 
 cd $NXF_SINGULARITY_CACHEDIR
 
