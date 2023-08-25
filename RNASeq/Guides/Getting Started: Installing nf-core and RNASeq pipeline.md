@@ -35,23 +35,8 @@ Here are some basic commands that I saw online:
 Once logged into the cluster, you should install nf-core. When on the cluster, you're automatically signed into the gra-login node, for the installation process, connect to a node dedicated for file transfers, dtn-1, as follows:
 
     ssh gra-dtn1
+
 Once on the node, type in **tmux**, this creates a tmux session which you can connect to by **tmux attach** if you get disconnected, allowing you to go on and off a session presumably.
-
-module load StdEnv/2020
-
-module load nextflow/22.10.6
-
-module load apptainer/1.1
-
-module load java/13.0.2
-
-NXF_SINGULARITY_CACHEDIR=/scratch/$USER/nf-core/
-
-cd $NXF_SINGULARITY_CACHEDIR
-
-source /scratch/$USER/nf-core/ENV/bin/activate
-
-
 
 To begin the download process, copy and paste the following onto your terminal:
 
@@ -69,6 +54,7 @@ Based on that, execute the following commands to create the environment in which
     python3  -m  venv  tutorial_env
     source  tutorial_env/bin/activate
     python3  -m  pip  install nf-core
+
 Note: After a lot of trial and error, I found that the correct version of python needed to be manually loaded (as shown above) before creating the python environment, otherwise your process will return back an error in the final step of the installation.
 
 Once that is completed, nf-core is downloaded and you now need to download the pipeline.
@@ -77,13 +63,13 @@ Once that is completed, nf-core is downloaded and you now need to download the p
 
 To download the **rnaseq** pipeline, run the following: 
 `
-module load StdEnv/2020
-module load nextflow/22.10.6
-module load apptainer/1.1
-module load java/13.0.2
-NXF_SINGULARITY_CACHEDIR=/scratch/${USER}/nf-core/
-cd $NXF_SINGULARITY_CACHEDIR
-source  tutorial_env/bin/activate
+module load StdEnv/2020 
+module load nextflow/22.10.6 
+module load apptainer/1.1 
+module load java/13.0.2 
+NXF_SINGULARITY_CACHEDIR=/scratch/${USER}/nf-core/ 
+cd $NXF_SINGULARITY_CACHEDIR 
+source  tutorial_env/bin/activate 
 nf-core download rnaseq
 `
 It will then guide you through the download process, prompting you to choose several options.
