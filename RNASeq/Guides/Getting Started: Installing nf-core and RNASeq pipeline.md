@@ -62,15 +62,16 @@ Once that is completed, nf-core is downloaded and you now need to download the p
 ## Downloading pipeline
 
 To download the **rnaseq** pipeline, run the following: 
+
 `
-module load StdEnv/2020\
-module load nextflow/22.10.6\
-module load apptainer/1.1\
-module load java/13.0.2 \
-NXF_SINGULARITY_CACHEDIR=/scratch/${USER}/nf-core/ \
-cd $NXF_SINGULARITY_CACHEDIR \
-source  tutorial_env/bin/activate \
-nf-core download rnaseq\
+    module load StdEnv/2020\
+    module load nextflow/22.10.6\
+    module load apptainer/1.1\
+    module load java/13.0.2 \
+    NXF_SINGULARITY_CACHEDIR=/scratch/${USER}/nf-core/ \
+    cd $NXF_SINGULARITY_CACHEDIR \
+    source  tutorial_env/bin/activate \
+    nf-core download rnaseq\
 `
 It will then guide you through the download process, prompting you to choose several options.
 
