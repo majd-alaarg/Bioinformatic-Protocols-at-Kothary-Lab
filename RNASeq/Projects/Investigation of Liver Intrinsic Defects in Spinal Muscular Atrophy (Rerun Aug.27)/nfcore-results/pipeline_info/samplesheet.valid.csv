@@ -1,0 +1,7 @@
+sample,single_end,fastq_1,fastq_2,strandedness
+LIVER_RNA_HET_1_S4_L001_T1,0,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_HET_1_S4_L001_R1_001.fastq.gz,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_HET_1_S4_L001_R2_001.fastq.gz,reverse
+LIVER_RNA_HET_2_S5_L001_T1,0,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_HET_2_S5_L001_R1_001.fastq.gz,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_HET_2_S5_L001_R2_001.fastq.gz,reverse
+LIVER_RNA_SMA_1_S1_L001_T1,0,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_SMA_1_S1_L001_R1_001.fastq.gz,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_SMA_1_S1_L001_R2_001.fastq.gz,reverse
+LIVER_RNA_SMA_2_S2_L001_T1,0,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_SMA_2_S2_L001_R1_001.fastq.gz,/scratch/majdal/pipelineAug27/Livermisterytest/LIVER_RNA_SMA_2_S2_L001_R2_001.fastq.gz,reverse
+P7_LIVER_RNA_HET_3_S6_L001_T1,0,/scratch/majdal/pipelineAug27/Livermisterytest/P7_LIVER_RNA_HET_3_S6_L001_R1_001.fastq.gz,/scratch/majdal/pipelineAug27/Livermisterytest/P7_LIVER_RNA_HET_3_S6_L001_R2_001.fastq.gz,reverse
+P7_LIVER_RNA_SMA_3_S3_L001_T1,0,/scratch/majdal/pipelineAug27/Livermisterytest/P7_LIVER_RNA_SMA_3_S3_L001_R1_001.fastq.gz,/scratch/majdal/pipelineAug27/Livermisterytest/P7_LIVER_RNA_SMA_3_S3_L001_R2_001.fastq.gz,reverse
