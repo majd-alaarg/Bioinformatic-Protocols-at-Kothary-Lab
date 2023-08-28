@@ -1,0 +1,7 @@
+Sample	5.0	10.0	15.0	20.0	25.0	30.0	35.0	40.0	45.0	50.0	55.0	60.0	65.0	70.0	75.0	80.0	85.0	90.0	95.0	100.0
+LIVER_RNA_HET_1_S4_L001																				
+LIVER_RNA_HET_2_S5_L001																				
+LIVER_RNA_SMA_1_S1_L001																				
+LIVER_RNA_SMA_2_S2_L001																				
+P7_LIVER_RNA_HET_3_S6_L001																				
+P7_LIVER_RNA_SMA_3_S3_L001																				
