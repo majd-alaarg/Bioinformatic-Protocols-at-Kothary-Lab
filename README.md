@@ -34,3 +34,5 @@ If the pipeline fails, check the  [troubleshooting docs](https://nf-co.re/docs/u
 
 ### Acknowledgment
 The rnaseq protcol in this repository are based on a [guide from the Ottawa Bioinformatics Core Facility (as of Aug. 21)](https://gitlab.com/ohri/obcf-documentation/-/blob/a6394dbc256054447e1a3478e8503b4e16f0f762/Files/nfcore-rnaseq-graham-HOWTO.md) that I redeveloped specifically for the Kothary Lab operations/experiments and to account for the changes in the Nextflow nf-core system at the time.
+
+Current OBCF repository (for additional reference): [https://gitlab.com/ohri/obcf-documentation/-/blob/master/Files/nfcore-rnaseq-graham-HOWTO.md](https://gitlab.com/ohri/obcf-documentation/-/blob/master/Files/nfcore-rnaseq-graham-HOWTO.md)
