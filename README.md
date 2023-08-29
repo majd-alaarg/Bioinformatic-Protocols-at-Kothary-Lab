@@ -26,3 +26,8 @@ The rnaseq protcol in this repository are based on a [guide from the Ottawa Bioi
 1. [Downloading Data from The Centre for Applied Genomics Portal (TCAG)](https://github.com/majd-alaarg/Bioinformatic-Protocols-at-Kothary-Lab/blob/1a8fcb7e59a4c5da75ac4fa32cc6ee53c7118d85/RNASeq/Guides/Downloading%20Data%20from%20The%20Centre%20for%20Applied%20Genomics%20Portal%20(TCAG).pdf)
 2. [Getting Started: Installing nf-core and RNASeq pipeline](https://github.com/majd-alaarg/Bioinformatic-Protocols-at-Kothary-Lab/blob/main/RNASeq/Guides/Getting%20Started%3A%20Installing%20nf-core%20and%20RNASeq%20pipeline.md)
 3. [Running RNASeq pipeline](https://github.com/majd-alaarg/Bioinformatic-Protocols-at-Kothary-Lab/blob/main/RNASeq/Guides/Running%20RNASeq%20pipeline.md)
+
+# Projects/Experiments Run
+1. [Downloading Data from The Centre for Applied Genomics Portal (TCAG)](https://github.com/majd-alaarg/Bioinformatic-Protocols-at-Kothary-Lab/blob/1a8fcb7e59a4c5da75ac4fa32cc6ee53c7118d85/RNASeq/Guides/Downloading%20Data%20from%20The%20Centre%20for%20Applied%20Genomics%20Portal%20(TCAG).pdf)
+2. [Getting Started: Installing nf-core and RNASeq pipeline](https://github.com/majd-alaarg/Bioinformatic-Protocols-at-Kothary-Lab/blob/main/RNASeq/Guides/Getting%20Started%3A%20Installing%20nf-core%20and%20RNASeq%20pipeline.md)
+3. [Running RNASeq pipeline](https://github.com/majd-alaarg/Bioinformatic-Protocols-at-Kothary-Lab/blob/main/RNASeq/Guides/Running%20RNASeq%20pipeline.md)
